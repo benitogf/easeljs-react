@@ -83,7 +83,7 @@ function updatePicture(node: Stage | DisplayObject) {
     // const { stage } = node;
     // the object spread works on dev mode, but not after build, on "create-react-app" project
     if (node.parent && node.parent.update) {
-        node.parent.update.update();
+        node.parent.update();
     }
 }
 
